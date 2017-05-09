@@ -1,5 +1,5 @@
 ## Demo
-[Working Demo](projects.charltongroves.com/color/)
+[Working Demo](http://projects.charltongroves.com/color/)
 ## Usage
 Click the middle of the screen and start typing
 ## What the heck is the point of this
