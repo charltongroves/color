@@ -5,7 +5,7 @@ overflow: hidden;
 
 input {
     position: fixed;
-    top: calc(50% - 5rem);;
+    top: calc(50% - 7.5rem);;
     width: 100%;
     text-align: center;
     background-color: transparent;
@@ -18,28 +18,39 @@ input {
     border-bottom: 1px solid #fff;
     
 }
-
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.5);
+}
 input:focus {
     outline:none;
 }
 
 .double-bounce1,
-.double-bounce2 {
-    width: 100%;
-    height: 100%;
+.double-bounce2{
+    width: 100vmax;
+    height: 100vmax;
     border-radius: 50%;
     background-color: #00f;
     opacity: 0.6;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: calc(50% - 50vmax);
+    left: calc(50% - 50vmax);
     -webkit-animation: sk-bounce 4.0s infinite ease-in-out;
     animation: sk-bounce 4.0s infinite ease-in-out;
     }
 
 .double-bounce2 {
-      -webkit-animation: sk-bounce 3s infinite ease-in-out;
-    animation: sk-bounce 3s infinite ease-in-out;
+      -webkit-animation: sk-bounce 3.1s infinite ease-in-out;
+    animation: sk-bounce 3.1s infinite ease-in-out;
 }
 
 .double-bounce2 {
@@ -60,8 +71,8 @@ input:focus {
 @keyframes sk-bounce {
     0%,
     100% {
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
+        transform: scale(0);
+        -webkit-transform: scale(0);
     }
     50% {
         transform: scale(1.0);

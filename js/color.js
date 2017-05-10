@@ -13,12 +13,4 @@ function change_color() {
 }
 
 $( document ).ready(function() {
-    width = $( window ).width();
-    height = $( window ).height();
-    $(".double-bounce1").css("width", width)
-    $(".double-bounce2").css("width", width)
-    $(".double-bounce1").css("height", width)
-    $(".double-bounce2").css("height", width)
-    $(".double-bounce1").css("top",  -width*0.5 + height*0.5)
-    $(".double-bounce2").css("top", -width*0.5 + height*0.5)
 });
